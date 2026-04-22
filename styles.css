@@ -64,3 +64,15 @@ header nav {
 .btn-nubank:hover {
     background-color: var(--purple);
 }
+
+.hero {
+    min-height: 90vh;
+    background: url(./Img-Nu/logo.fundo.png) center 10%/ cover no-repeat;
+    padding: 0px 40px 80px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    border-radius: 0 0 40px 40px;
+
+
+}
