@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #820AD1;
+    --purple-dark: #6B07B0;
+    --white: #FFFFFF;
+    --dark: #0B0014;
+    --gray-text: #6B6B6B;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--dark);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    backdrop-filter: bur(10px);
+}
+
+.logo-img {
+    height: 26px;
+}
