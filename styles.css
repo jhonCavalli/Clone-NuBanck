@@ -229,3 +229,50 @@ header nav {
     justify-content: space-between;
     color: var(--white);
 }
+
+.card-info span {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+ .card-info strong {
+    font-size: 24px;
+    color: var(--white);
+ }
+.card-text {
+    max-width: 480px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.card-text h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--white);
+    margin-bottom: 16px;
+}
+
+.card-text p {
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.1);
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.card-text ul {
+    list-style: none;
+    margin-bottom: 24px;
+}
+
+.card-text ul li {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    padding: 6px 0;
+}
+
+.card-text ul li::before {
+    content: '✓';
+    color: var(--purple);
+    margin-right: 10px;
+}
