@@ -287,12 +287,14 @@ header nav {
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
-    transform: translate(5.0);
+    transform: translateX(5px);
 }
 
-animation: move 0.3s ease;
+.btn-pulsar {
+    animation: pulsar 1s infinite;
+}
 
-@keyframes move {
+@keyframes pulsar {
     0% {
         transform: translate(0);
     }
@@ -305,6 +307,13 @@ animation: move 0.3s ease;
 }
 
 .btn-purple:hover {
-    transition: ;
+    transition: background-color 0.3s ease;
     background-color: var(--purple-dark);
+}
+
+.cta {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 80px 40px;
+    text-align: center;
 }
