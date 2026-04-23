@@ -160,3 +160,40 @@ header nav {
 .btn-confirm:hover {
     background-color: var(--purple-dark);
 }
+
+.services {
+    padding: 80px 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.services a {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.services a:hover {
+    color: var(--purple);
+}
+
+.card-section {
+    background-color: var(--dark);
+    padding: 100px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.credit-card {
+    
+}
