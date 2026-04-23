@@ -195,5 +195,10 @@ header nav {
 }
 
 .credit-card {
-    
+    width: 360px;
+    height: 220px;
+    background-color: linear-gradient(135deg, var(--purple), var(--purple-dark));
+    border-radius: 20px;
+    padding: 30px;
+
 }
