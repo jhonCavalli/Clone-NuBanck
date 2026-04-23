@@ -276,3 +276,35 @@ header nav {
     color: var(--purple);
     margin-right: 10px;
 }
+
+.btn-purple {
+    background-color: var(--purple);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transform: translate(5.0);
+}
+
+animation: move 0.3s ease;
+
+@keyframes move {
+    0% {
+        transform: translate(0);
+    }
+    50% {
+        transform: translate(5px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+.btn-purple:hover {
+    transition: ;
+    background-color: var(--purple-dark);
+}
