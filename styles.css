@@ -197,10 +197,16 @@ header nav {
 .credit-card {
     width: 360px;
     height: 220px;
-    background-color: linear-gradient(135deg, var(--purple), var(--purple-dark));
+    background:linear-gradient(135deg, #653AAF, #820AD1);
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 20px 10px rgba(130, 10, 209, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.credit-card:hover {
+    transform: rotateZ(5deg ) translateY(-10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-chip {
@@ -212,5 +218,14 @@ header nav {
 }
 
 .card-number {
-    
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
 }
