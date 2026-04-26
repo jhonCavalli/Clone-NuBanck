@@ -282,12 +282,14 @@ header nav {
     color: var(--white);
     padding: 12px 20px;
     border-radius: 30px;
+    box-shadow: 0 9px 3px rgba(130, 10, 209, 0.3);
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
     transform: translateX(5px);
+
 }
 
 .btn-pulsar {
@@ -314,6 +316,36 @@ header nav {
 .cta {
     background-color: var(--purple);
     color: var(--white);
-    padding: 80px 40px;
+    padding: 100px 40px;
     text-align: center;
 }
+
+.cta h2 {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.cta p {
+    font-size: 18px;
+    margin-bottom: 32px;
+}
+
+.btn-cta {
+    background-color: var(--purple-dark);
+    color: var(--white);
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: var(--dark) 0px 4px 8px;
+    cursor: pointer;
+}
+.btn-cta:hover {
+    background-color: var(--purple);
+    transition: background-color 0.3s ease;
+}
+
+
+
