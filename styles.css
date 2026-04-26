@@ -421,5 +421,21 @@ img {
   }
 }
 
+.footer-top p {
+    font-size: 14px;
+}
+
+.footer-liks {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-liks a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
 
 
