@@ -421,17 +421,34 @@ img {
   }
 }
 
-.footer-top p {
-    font-size: 14px;
-}
-
-.footer-liks {
+.footer-top {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 40px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
 }
+    
 
-.footer-liks a {
+.footer-links {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 20px;
+}
+
+.footer-links h4 {
+    font-size: 14px;
+    padding: 20px 0;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.footer-links a {
     text-decoration: none;
+    padding: 10px;
     color: var(--white);
     font-size: 14px;
     transition: color 0.3s ease;
