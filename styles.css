@@ -347,5 +347,21 @@ header nav {
     transition: background-color 0.3s ease;
 }
 
+.footer-top {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
+img {
+    display: block;
+    cursor: pointer;
+
+}
+.footer-logo {
+    height: 26px;
+}
 
