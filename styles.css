@@ -466,6 +466,10 @@ img {
     transition: color 0.3s ease;
 }
 
+.footer-links a:hover {
+    color: var(--purple);
+}
+
 .footer-bottom {
     background-color: var(--dark);
     color: var(--gray-text);
