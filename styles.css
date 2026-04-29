@@ -437,9 +437,14 @@ img {
     top: 5px;
     color: var(--gray-text);
 }
+
+.footer-filho {
+    flex: 2;
+}
     
 
 .footer-links {
+    flex: 1;
     display: flex;
     flex-direction: column; 
     align-items: center;    
