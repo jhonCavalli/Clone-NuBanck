@@ -15,6 +15,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--dark);
+    overflow: hidden;
 }
 
 header {
@@ -26,9 +27,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px;
+    padding: 0 5%;
     z-index: 99;
-    background-color: rgba(255, 255, 255, 0.8) ;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0, 05);
 }
 
 .logo-img {
@@ -44,7 +46,9 @@ header nav {
     text-decoration: none;
     color: var(--dark);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.9rem;
+    transition: color 0.5s;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -55,21 +59,24 @@ header nav {
 .btn-nubank {
     background-color: var(--purple-dark);
     color: var(--white);
-    padding: 10px 20px;
+    padding: 8px 18px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 0.85rem;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.2s;
+    white-space: nowrap;
 }
 .btn-nubank:hover {
     background-color: var(--purple);
+    transform: scale(0.95);
 }
 
 .hero {
     min-height: 80vh;
     background: url(./Img-Nu/logo.fundo.png) center / cover no-repeat;
-    padding: 0px 40px 80px;
+    padding: 100px 5% 60px;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
@@ -476,5 +483,171 @@ img {
     text-align: center;
     padding: 20px;
 }
+
+
+
+/* melhoria */
+
+ .voting-module {
+            background: rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255,255,255,0.3);
+            border-radius: 28px;
+            padding: 20px 24px;
+            margin-top: 32px;
+            backdrop-filter: blur(2px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.2s ease;
+        }
+        .voting-title {
+            font-weight: 800;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            color: #0B0014;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .voting-title span {
+            background: #820AD1;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+        }
+        .vote-input-group {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .vote-input-group input {
+            flex: 2;
+            padding: 12px 16px;
+            border-radius: 60px;
+            border: 1px solid #ddd;
+            font-size: 0.9rem;
+            outline: none;
+            transition: 0.2s;
+        }
+        .vote-input-group input:focus {
+            border-color: #820AD1;
+            box-shadow: 0 0 0 2px rgba(130,10,209,0.2);
+        }
+        .vote-input-group button {
+            background: #820AD1;
+            border: none;
+            padding: 0 24px;
+            border-radius: 60px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 0.9rem;
+        }
+        .vote-input-group button:hover {
+            background: #6B07B0;
+            transform: scale(0.97);
+        }
+        .ranking-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            max-height: 240px;
+            overflow-y: auto;
+        }
+        .ranking-list li {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f5f3f7;
+            margin: 8px 0;
+            padding: 8px 14px;
+            border-radius: 60px;
+            font-weight: 500;
+        }
+        .ranking-list li strong {
+            color: #820AD1;
+            font-size: 1rem;
+        }
+        .vote-count {
+            background: #e2d6ff;
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin: 0 8px;
+        }
+        .btn-small-vote {
+            background: #1e1e2f;
+            border: none;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 0.75rem;
+            transition: 0.1s;
+        }
+        .btn-small-vote:hover {
+            background: #820AD1;
+        }
+        .leader-badge {
+            background: #FFD966;
+            color: #2c0042;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .toast-message {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0B0014;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 60px;
+            font-weight: 600;
+            z-index: 999;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            animation: fadeSlide 0.3s ease forwards;
+            pointer-events: none;
+            font-size: 0.9rem;
+        }
+        @keyframes fadeSlide {
+            0% { opacity: 0; transform: translateX(-50%) translateY(20px);}
+            100% { opacity: 1; transform: translateX(-50%) translateY(0);}
+        }
+        .cpf-feedback {
+            font-size: 12px;
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #f0f0f0;
+        }
+        .valid-icon {
+            color: #a5ffb0;
+        }
+        .hero-card input.cpf-error {
+            border: 2px solid #ff7878;
+            background-color: #fff0f0;
+        }
+        .service-toastable {
+            transition: all 0.1s ease;
+        }
+        footer a, .btn-nubank, .btn-confirm, .btn-purple, .btn-cta {
+            cursor: pointer;
+        }
+        .voting-module .empty-rank {
+            text-align: center;
+            padding: 16px;
+            color: #6B6B6B;
+            font-style: italic;
+        }
 
 
