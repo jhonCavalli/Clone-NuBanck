@@ -13,46 +13,48 @@
     <header>
         <img src="Img-Nu/Nubank logo.png" alt="Logo do Nu-Bank" class="logo-img">
         <nav>
-            <a href="#">Nubank</a>
-            <a href="#">Nubank Ultravioleta</a>
-            <a href="#">Nu Empresa</a>
-            <a href="#">Segurança</a>
-            <a href="#">Saiba mais</a>
+            <a href="#" id="navNubank">Nubank</a>
+            <a href="#" id="navUltra">Nubank Ultravioleta</a>
+            <a href="#" id="navEmpresa">Nu Empresa</a>
+            <a href="#" id="navSeguranca">Segurança</a>
+            <a href="#" id="navSaiba">Saiba mais</a>
         </nav>
 
-        <a class="btn-nubank">Quero ser Nubank</a>
+        <a class="btn-nubank" id="queroSerBtn">Quero ser Nubank</a>
     </header>
 
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
                 <h1>Vote no novo da arena e veja o seu proprio nome aparecer la</h1>
-                <a href="#" class="btn-nubank">Votar agora</a>
+                <a href="#" class="btn-nubank" id="votarAgoraBtn">Votar agora</a>
+                <div id="arenaVotingContainer"></div>
             </div>
 
             <div class="hero-card">
                 <h3>Peça seu Cartão de Credito e sua Conta do Nubank</h3>
                 <label>Digite seu CPF</label>
-                <input type="text" placeholder="000.000.000-00">
-                <a href="#" class="btn-confirm">Continuar</a>
+                <input type="text" id="cpfInput" placeholder="000.000.000-00" maxlength="14">
+                 <div id="cpfFeedback" class="cpf-feedback"></div>
+                <a href="#" class="btn-confirm" id="continuarCpfBtn">Continuar</a>
             </div>
             
         </div>
     </section>
 
-    <section class="services">
-        <a href="#">💳 Conta do Nu-bank</a>
-        <a href="#">💜 Cartão de crédito</a>
-        <a href="#">🔒 Seguro Nu-bank</a>
-        <a href="#">📱 Nu Celular</a>
-        <a href="#">🛍️ Shopping</a>
-        <a href="#">📈 Investimentos</a>
-        <a href="#">💰 Empréstimos</a>
+    <section class="services" id="servicesSection">
+        <a href="#" data-service="Conta do Nu-bank">💳 Conta do Nu-bank</a>
+        <a href="#" data-service="Cartão de crédito">💜 Cartão de crédito</a>
+        <a href="#" data-service="Seguro Nu-bank">🔒 Seguro Nu-bank</a>
+        <a href="#" data-service="Nu Celular">📱 Nu Celular</a>
+        <a href="#" data-service="Shopping">🛍️ Shopping</a>
+        <a href="#" data-service="Investimentos">📈 Investimentos</a>
+        <a href="#" data-service="Empréstimos">💰 Empréstimos</a>
 
     </section>
 
     <section class="card-section">
-        <div class="credit-card">
+        <div class="credit-card" id="interactiveCard">
             <div class="card-chip"></div>
             <p class="card-number">•••• •••• •••• 5467</p>
             <div class="card-info">
@@ -73,44 +75,44 @@
                     <li>Bloqueio e desbloqueio pelo app</li>
                 </ul>
 
-                <a class="btn-purple btn-pulsar" href="#">Pedir meu cartão</a>
+                <a class="btn-purple btn-pulsar" href="#" id="pedirCartaoBtn">Pedir meu cartão</a>
         </div>
     </section>
 
     <section class="cta">
         <h2>Pronto para simplificar sua vida financeira?</h2>
         <p>Aba sua conta em minutos. Sem filas, sem papelada, sem burocracia.</p>
-        <a href="#" class="btn-cta">Abrir minha conta grátis</a>
+        <a href="#" class="btn-cta"  id="abrirContaBtn">Abrir minha conta grátis</a>
     </section>
 
     <footer>
         <div class="footer-top">
             <div class="footer-filho">
-                <a href="index.html">
+                <a href="index.html"  id="footerLogoLink">
                     <img src="Img-Nu/Nubank logo.png" alt="Logo do Nu-Bank" onclick="clickHandler(click)" class="footer-logo pulsar-link">
                 </a>
                 <p>© 2026 Nu-Bank. Todos os direitos reservados.</p>
             </div>
             <div class="footer-links">
                 <h4>Produtos</h4>
-                <a href="#">Contas digital</a>
-                <a href="#">Cartão de crédito</a>
-                <a href="#">Investimento</a>
-                <a href="#">Empréstimo</a>
+                 <a href="#" class="footerProd">Contas digital</a>
+                <a href="#" class="footerProd">Cartão de crédito</a>
+                <a href="#" class="footerProd">Investimento</a>
+                <a href="#" class="footerProd">Empréstimo</a>
             </div>
             <div class="footer-links">
                 <h4>Nu-bank</h4>
-                <a href="#">Sobre Nu</a>
-                <a href="#">Carreiras</a>
-                <a href="#">Imprensa</a>
-                <a href="#">Comunidade</a>
+                <a href="#" class="footerSobre">Sobre Nu</a>
+                <a href="#" class="footerSobre">Carreiras</a>
+                <a href="#" class="footerSobre">Imprensa</a>
+                <a href="#" class="footerSobre">Comunidade</a>
             </div>
             <div class="footer-links">
                 <h4>Ajuda</h4>
-                <a href="#">Central de ajuda</a>
-                <a href="#">Blog</a>
-                <a href="#">Segurança</a>
-                <a href="#">Contato</a>
+                <a href="#" class="footerAjuda">Central de ajuda</a>
+                <a href="#" class="footerAjuda">Blog</a>
+                <a href="#" class="footerAjuda">Segurança</a>
+                <a href="#" class="footerAjuda">Contato</a>
             </div>
         </div>
 
@@ -120,5 +122,5 @@
         </p>
     </footer>
 </body>
-
+<script src="script.js"></script>
 </html>
